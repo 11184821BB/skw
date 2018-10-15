@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reg.css"/>
+	</head>
+	<body>
+<!-------------------------------------header------------------------------>		
+		<header>
+			<span class="logo"></span>
+			<ul class="r">
+				<li class="l"><a href="index.html">寺库首页</a></li>
+				<li class="l"><a href="#">收藏寺库</a></li>
+				<li class="l"><a href="#">寺库APP</a></li>
+			</ul>
+		</header>
+<!-------------------------------------main-------------------------------->
+		<main>
+			<!-------------------------banner------------------------->
+			<div class="banner">
+				<div class="login r">
+					<h3><a href="#">账号注册</a></h3>
+					<!-- action:提交后，由服务器端的哪个php文件进行处理 -->
+					<form action="js/regSave.php" method="post">
+			        	<dl>
+			            	<!--<dt>用户名/手机号/邮箱</dt>-->
+			                <dd><input type="text" placeholder="用户名/手机号/邮箱" name="username"/>
+			                	<!--<span id="usernameMessage"></span>-->
+			                </dd>
+			            </dl>
+			        	<dl>
+			            	<!--<dt>密码</dt>-->
+			                <dd><input type="password" placeholder="密码" name="userpass"/></dd>
+			            </dl>
+			            <dl>
+			            	<!--<dt>确认密码</dt>-->
+			                <dd><input type="password" placeholder="确认密码"/></dd>
+			            </dl>
+			        	<dl>
+			            	<dt>贵宾邀请码</dt>
+			                <dd><input type="checkbox" checked/></dd>
+			            </dl>
+			        	<dl>
+			            	<dt></dt>
+			                <dd>
+			                	<div id="messageBox" style="color:red;display:none"></div>
+			                	<input type="submit" value="立即注册" id="btnReg"/></dd>
+			            </dl>
+			            <dl>
+			            	<dt>我已阅读并同意《寺库网用户注册协议》</dt>
+			                <dd><input type="checkbox" checked/></dd>
+			            </dl>
+			       </form>
+						<p class="l">已经是寺库会员？<a href="login.html">立即登录</a></p>
+				</div>
+			</div>
+		</main>
+<!------------------------------------foot-------------------------------->
+		<div id="foot">
+			
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		$("#foot").load("footer.html");
+	});
+	
+</script>

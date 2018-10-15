@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<style type="text/css">
+/*=================================header=============================*/
+			header{height: 98px;
+				   /*overflow: hidden;*/
+				   padding-top: 22px;
+				   position: relative;
+			}
+			header img{
+				width: 84px;
+				height: 84px;
+			}
+			header div{
+				width: 135px;
+				height: 34px;
+				margin-left: 8px;
+			}
+			header div h3{
+				font-size: 16px;
+			}
+			header .logo{
+				margin: 0 auto;
+			}
+			header ul{
+				margin-top: -45px;
+			}
+			header ul li{
+				padding: 0 22px;
+			}
+			header ul li:nth-of-type(1) a:nth-of-type(1){
+				margin-right: 8px;
+			}
+			header ul li:nth-of-type(2){
+				position: relative;
+			}
+			header ul li:nth-of-type(2) span{
+				width: 0px;
+				height: 0px;
+				border-top: 5px solid #f8a120;
+				border-left: 5px solid #fff;
+				border-right: 5px solid #fff;
+				position: absolute;
+				top: 6px;
+				left: 74px;
+				transition: transform 0.7s;
+			}
+			header ul li:nth-of-type(2):hover span{
+				transform: rotate(180deg);
+			}
+			header .shop{
+				position: relative;
+			}
+			header .shop:hover p a{
+				color: #f8a120;
+			}
+			header .shop span img{
+				width: 18px;
+				height: 16px;
+				position: absolute;
+				right: 100px;
+			}
+			header .shop p:nth-of-type(1){
+				position: absolute;
+				right: 53px;
+			}
+			header .shop p:nth-of-type(1) a{
+				font-size: 14px;
+			}
+			header .shop p:nth-of-type(2){
+				position: absolute;
+				right: 33px;
+				font-size: 14px;
+				color: #f8a120;
+				top: -2px;
+			}
+			header .serve{
+				width: 141px;
+				height: 100px;
+				background: #fff;
+				position: absolute;
+				right: 0;
+				top: 30px;
+				z-index: 1;
+				padding: 0 25px;
+				border: 1px solid #f8a120;
+				display: none;
+			}
+			header .serve p{
+				line-height: 25px;
+			}
+			/*===================nav=================*/
+			nav{
+				height: 44px;
+				background: #1a191e;
+				position: relative;
+			}
+			nav .fi{
+				position: relative;
+			}
+			nav .fi li a{
+				display: block;
+				color: #fff;
+				line-height: 44px;
+				padding-right: 40px;
+				font-size: 14px;
+			}
+			nav .fi li:nth-of-type(1) a{
+				margin-left: 40px;
+				color: #f8a120;
+			}
+			/*nav form{position: relative;}*/
+			nav form input.l{
+				width: 213px;
+				height: 38px;
+				background: #fff;
+				border: 0;
+				margin-top: 3px;
+				margin-left: 30px;
+				padding-left: 10px;
+				color: #a59999;
+			}
+			nav form input.r{
+				width: 16px;
+				height: 16px;
+				background: url(image/search.png) no-repeat 0;
+				border: 0;
+				position: absolute;
+				top: 14px;
+				right: 49px;
+				cursor: pointer;
+			}	
+			.nav2{
+				height: 308px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -311px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}
+			 .baodai{
+				width:217px;
+				height: 308px;
+				margin-right: 156px;
+				padding:0 33px;
+			}
+			 .baodai p{
+				margin:25px 0;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			 .th{
+				margin-right: 0;
+			}
+			 .baodai li a{
+				display: block;
+				line-height: 44px;
+				padding-right: 40px;
+				color: #666;
+			}
+	
+			.nav3{
+				height: 408px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -411px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}
+			.nav4{
+				height: 350px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -353px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}	
+			
+			
+			.nav5{
+				height: 300px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -303px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}	
+			.nav6{
+				height: 280px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -283px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}	
+			.nav7{
+				height: 300px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -303px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}	
+			.nav8{
+				height: 350px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -353px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}	
+			.nav9{
+				height: 300px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -303px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}	
+			.nav10{
+				height: 320px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -323px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}	
+			.nav11{
+				height: 410px;
+				width: 100%;
+				background: #f6f3f3;
+				position: absolute;
+				left: 0;
+				bottom: -413px;
+				z-index: 1;
+				padding: 0 45px;
+				display: none;
+				border-bottom: 3px solid #f8a120;
+			}	
+			nav div{
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<!------------------------------header------------------------>
+		<header class="w">
+			<img src="image/ewm.png" class="l">
+			<div class="l">
+				<h3>扫码下载寺库APP</h3>
+				<p>给你全世界的美好</p>
+			</div>
+			<div class="logo">
+				<a href="#"><img src="image/logo.jpg"/></a>
+			</div>
+			<ul class="r">
+				<li class="l"><a href="login.html">请登录</a><a href="reg.html">免费注册</a></li>
+				<li id="guest" class="l"><a href="#">客户服务</a><span></span></li>
+				<li class="l"><a href="#">媒体聚焦</a></li>
+			</ul>
+			<div class="serve">
+				<p><a href="#">在线客服</a></p>
+				<p><a href="#">养护中心</a></p>
+				<p><a href="#">帮助中心</a></p>
+				<p>贵宾专线：400-87-56789</p>
+			</div>
+			
+			<div class="shop r">
+				<span><a href="#"><img src="image/gwc.png"/></a></span>
+				<p><a href="#">购物车</a></p>
+				<p>(0)</p>
+			</div>
+		</header>
+			<!--------------nav---------------->
+			<nav>
+				<ul class="fi">
+					<li class="l" id="one"><a href="index.html">首页</a></li>
+					<li class="l" id="two"><a href="#">包装</a></li>
+					<li class="l" id="three"><a href="#">腕表</a></li>
+					<li class="l" id="four"><a href="#">珠宝首饰</a></li>
+					<li class="l" id="five"><a href="#">服装鞋靴</a></li>
+					<li class="l" id="six"><a href="#">配饰</a></li>
+					<li class="l" id="seven"><a href="#">体育运动</a></li>
+					<li class="l" id="eight"><a href="#">家居生活</a></li>
+					<li class="l" id="nine"><a href="#">生活方式</a></li>
+					<li class="l" id="ten"><a href="#">母婴美妆</a></li>
+					<li class="l" id="eleven"><a href="#">豪车频道</a></li>
+					
+				</ul>
+				<form>
+					<input type="text" value="Roger  Vivier" class="l"/>
+					<a href="#"><input type="submit" value=" " class="r"/></a>
+				</form>
+			
+			<!----------------------点击事件----------------------->
+				<main class="nav2">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">男包袋</a></li>
+							<li class="l"><a href="#">女包袋</a></li>
+							<li class="l"><a href="#">钱包包</a></li>
+							<li class="l"><a href="#">手拿包</a></li>
+							<li class="l"><a href="#">斜挎包</a></li>
+							<li class="l"><a href="#">拉杆箱</a></li>
+							<li class="l"><a href="#">双肩包</a></li>
+							<li class="l"><a href="#">手提包</a></li>
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">圣罗兰</a></li>
+							<li class="l"><a href="#">宝格丽</a></li>
+							<li class="l"><a href="#">葆蝶家</a></li>
+							<li class="l"><a href="#">范思哲</a></li>
+							<li class="l"><a href="#">葆蝶家</a></li>
+							<li class="l"><a href="#">范思哲</a></li>
+							<li class="l"><a href="#">杜嘉班</a></li>
+							<li class="l"><a href="#">克洛伊</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">杀手包</a></li>
+							<li class="l"><a href="#">饺子包</a></li>
+							<li class="l"><a href="#">链条包</a></li>
+							<li class="l"><a href="#">铆钉包</a></li>
+							<li class="l"><a href="#">托特包</a></li>
+							<li class="l"><a href="#">小怪兽</a></li>
+							<li class="l"><a href="#">购物袋</a></li>
+							<li class="l"><a href="#">双肩包</a></li>
+						</ul>
+					</div>
+				</main>
+			
+				<main class="nav3">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">男士腕表</a></li>
+							<li class="l"><a href="#">女士腕表</a></li>
+							<li class="l"><a href="#">机械腕表</a></li>
+							<li class="l"><a href="#">石英腕表</a></li>
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">宝珀</a></li>
+							<li class="l"><a href="#">宝玑</a></li>
+							<li class="l"><a href="#">朗格</a></li>
+							<li class="l"><a href="#">百达</a></li>
+							<li class="l"><a href="#">翡丽</a></li>
+							<li class="l"><a href="#">江诗</a></li>
+							<li class="l"><a href="#">丹顿</a></li>
+							<li class="l"><a href="#">积家</a></li>
+							<li class="l"><a href="#">芝柏</a></li>
+							<li class="l"><a href="#">萧邦</a></li>
+							<li class="l"><a href="#">万国</a></li>
+							<li class="l"><a href="#">沛纳</a></li>
+							<li class="l"><a href="#">海格</a></li>
+							<li class="l"><a href="#">拉苏</a></li>
+							<li class="l"><a href="#">蒂劳</a></li>
+							<li class="l"><a href="#">米茄</a></li>
+							<li class="l"><a href="#">宝珀</a></li>
+							<li class="l"><a href="#">宝玑</a></li>
+							<li class="l"><a href="#">朗格</a></li>
+							<li class="l"><a href="#">百达</a></li>
+							<li class="l"><a href="#">翡丽</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">蓝气球</a></li>
+							<li class="l"><a href="#">水鬼星</a></li>
+							<li class="l"><a href="#">座碟飞</a></li>
+							<li class="l"><a href="#">五十噚</a></li>
+							<li class="l"><a href="#">名匠丽</a></li>
+							<li class="l"><a href="#">贝伦赛</a></li>
+							<li class="l"><a href="#">大师葡</a></li>
+							
+						</ul>
+					</div>
+				</main>
+	
+				<main class="nav4">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">项链</a></li>
+							<li class="l"><a href="#">吊坠</a></li>
+							<li class="l"><a href="#">手链</a></li>
+							<li class="l"><a href="#">耳饰</a></li>
+							<li class="l"><a href="#">手镯</a></li>
+							<li class="l"><a href="#">戒指</a></li>
+							<li class="l"><a href="#">指环</a></li>
+							<li class="l"><a href="#">宝石</a></li>
+							<li class="l"><a href="#">裸石</a></li>
+							<li class="l"><a href="#">胸针</a></li>
+							<li class="l"><a href="#">头饰</a></li>
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">蒂芙尼</a></li>
+							<li class="l"><a href="#">宝格丽</a></li>
+							<li class="l"><a href="#">施华洛</a></li>
+							<li class="l"><a href="#">爱马仕</a></li>
+							<li class="l"><a href="#">香奈儿</a></li>
+							<li class="l"><a href="#">易威登</a></li>
+							<li class="l"><a href="#">潘多拉</a></li>
+							<li class="l"><a href="#">世奇路</a></li>
+							<li class="l"><a href="#">莫尼卡</a></li>
+							<li class="l"><a href="#">维纳德</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">时尚水晶</a></li>
+							<li class="l"><a href="#">弹簧系列</a></li>
+							<li class="l"><a href="#">格丽项链</a></li>
+							<li class="l"><a href="#">珍珠吊坠</a></li>
+							<li class="l"><a href="#">明星同款</a></li>
+							<li class="l"><a href="#">戒指婚戒</a></li>
+							<li class="l"><a href="#">迪奥手镯</a></li>
+							<li class="l"><a href="#">足金首饰</a></li>
+						</ul>
+					</div>
+				</main>
+
+				<main class="nav5">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">男士男装</a></li>
+							<li class="l"><a href="#">女士卫衣</a></li>
+							<li class="l"><a href="#">男士男鞋</a></li>
+							<li class="l"><a href="#">女士衣裙</a></li>
+							<li class="l"><a href="#">男士卫衣</a></li>
+							<li class="l"><a href="#">男士裤装</a></li>
+							<li class="l"><a href="#">男士夹克</a></li>
+							<li class="l"><a href="#">男士外套</a></li>
+							
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">男士卫衣</a></li>
+							<li class="l"><a href="#">男士裤装</a></li>
+							<li class="l"><a href="#">男士夹克</a></li>
+							<li class="l"><a href="#">男士外套</a></li>
+							<li class="l"><a href="#">女士休闲</a></li>
+							<li class="l"><a href="#">女士内衣</a></li>
+							<li class="l"><a href="#">男士休闲</a></li>
+							<li class="l"><a href="#">男士商务</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">男士风衣</a></li>
+							<li class="l"><a href="#">女士卫衣</a></li>
+							<li class="l"><a href="#">女士半裙</a></li>
+							<li class="l"><a href="#">男士西装</a></li>
+							<li class="l"><a href="#">女士休闲</a></li>
+							<li class="l"><a href="#">女士内衣</a></li>
+							<li class="l"><a href="#">男士休闲</a></li>
+							<li class="l"><a href="#">男士商务</a></li>
+						</ul>
+					</div>
+				</main>
+				
+				<main class="nav6">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">镜架</a></li>
+							<li class="l"><a href="#">腰带</a></li>
+							<li class="l"><a href="#">披肩</a></li>
+							<li class="l"><a href="#">丝巾</a></li>
+							<li class="l"><a href="#">伞挂</a></li>
+							<li class="l"><a href="#">帽子</a></li>
+							<li class="l"><a href="#">袖扣</a></li>
+							<li class="l"><a href="#">领结</a></li>
+							<li class="l"><a href="#">围巾</a></li>
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">菲拉格</a></li>
+							<li class="l"><a href="#">驰慕范</a></li>
+							<li class="l"><a href="#">古思哲</a></li>
+							<li class="l"><a href="#">路易威</a></li>
+							<li class="l"><a href="#">马仕博</a></li>
+							<li class="l"><a href="#">易威登</a></li>
+							<li class="l"><a href="#">葆蝶家</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">鹰头腰带</a></li>
+							<li class="l"><a href="#">17新款晴</a></li>
+							<li class="l"><a href="#">雨伞针扣</a></li>
+							<li class="l"><a href="#">偏光阳镜</a></li>
+							<li class="l"><a href="#">腰带披肩</a></li>
+						</ul>
+					</div>
+				</main>
+				
+				<main class="nav7">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">男包袋</a></li>
+							<li class="l"><a href="#">女包袋</a></li>
+							<li class="l"><a href="#">钱包包</a></li>
+							<li class="l"><a href="#">手拿包</a></li>
+							<li class="l"><a href="#">斜挎包</a></li>
+							<li class="l"><a href="#">拉杆箱</a></li>
+							<li class="l"><a href="#">双肩包</a></li>
+							<li class="l"><a href="#">手提包</a></li>
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">圣罗兰</a></li>
+							<li class="l"><a href="#">宝格丽</a></li>
+							<li class="l"><a href="#">葆蝶家</a></li>
+							<li class="l"><a href="#">范思哲</a></li>
+							<li class="l"><a href="#">葆蝶家</a></li>
+							<li class="l"><a href="#">范思哲</a></li>
+							<li class="l"><a href="#">杜嘉班</a></li>
+							<li class="l"><a href="#">克洛伊</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">杀手包</a></li>
+							<li class="l"><a href="#">饺子包</a></li>
+							<li class="l"><a href="#">链条包</a></li>
+							<li class="l"><a href="#">铆钉包</a></li>
+							<li class="l"><a href="#">托特包</a></li>
+							<li class="l"><a href="#">小怪兽</a></li>
+							<li class="l"><a href="#">购物袋</a></li>
+							<li class="l"><a href="#">双肩包</a></li>
+						</ul>
+					</div>
+				</main>
+				
+				<main class="nav8">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">项链</a></li>
+							<li class="l"><a href="#">吊坠</a></li>
+							<li class="l"><a href="#">手链</a></li>
+							<li class="l"><a href="#">耳饰</a></li>
+							<li class="l"><a href="#">手镯</a></li>
+							<li class="l"><a href="#">戒指</a></li>
+							<li class="l"><a href="#">指环</a></li>
+							<li class="l"><a href="#">宝石</a></li>
+							<li class="l"><a href="#">裸石</a></li>
+							<li class="l"><a href="#">胸针</a></li>
+							<li class="l"><a href="#">头饰</a></li>
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">蒂芙尼</a></li>
+							<li class="l"><a href="#">宝格丽</a></li>
+							<li class="l"><a href="#">施华洛</a></li>
+							<li class="l"><a href="#">爱马仕</a></li>
+							<li class="l"><a href="#">香奈儿</a></li>
+							<li class="l"><a href="#">易威登</a></li>
+							<li class="l"><a href="#">潘多拉</a></li>
+							<li class="l"><a href="#">世奇路</a></li>
+							<li class="l"><a href="#">莫尼卡</a></li>
+							<li class="l"><a href="#">维纳德</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">时尚水晶</a></li>
+							<li class="l"><a href="#">弹簧系列</a></li>
+							<li class="l"><a href="#">格丽项链</a></li>
+							<li class="l"><a href="#">珍珠吊坠</a></li>
+							<li class="l"><a href="#">明星同款</a></li>
+							<li class="l"><a href="#">戒指婚戒</a></li>
+							<li class="l"><a href="#">迪奥手镯</a></li>
+							<li class="l"><a href="#">足金首饰</a></li>
+						</ul>
+					</div>
+				</main>
+				
+				<main class="nav9">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">镜架</a></li>
+							<li class="l"><a href="#">腰带</a></li>
+							<li class="l"><a href="#">披肩</a></li>
+							<li class="l"><a href="#">丝巾</a></li>
+							<li class="l"><a href="#">伞挂</a></li>
+							<li class="l"><a href="#">帽子</a></li>
+							<li class="l"><a href="#">袖扣</a></li>
+							<li class="l"><a href="#">领结</a></li>
+							<li class="l"><a href="#">围巾</a></li>
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">菲拉格</a></li>
+							<li class="l"><a href="#">驰慕范</a></li>
+							<li class="l"><a href="#">古思哲</a></li>
+							<li class="l"><a href="#">路易威</a></li>
+							<li class="l"><a href="#">马仕博</a></li>
+							<li class="l"><a href="#">易威登</a></li>
+							<li class="l"><a href="#">葆蝶家</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">鹰头腰带</a></li>
+							<li class="l"><a href="#">17新款晴</a></li>
+							<li class="l"><a href="#">雨伞针扣</a></li>
+							<li class="l"><a href="#">偏光阳镜</a></li>
+							<li class="l"><a href="#">腰带披肩</a></li>
+						</ul>
+					</div>
+				</main>
+				
+				<main class="nav10">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">项链</a></li>
+							<li class="l"><a href="#">吊坠</a></li>
+							<li class="l"><a href="#">手链</a></li>
+							<li class="l"><a href="#">耳饰</a></li>
+							<li class="l"><a href="#">手镯</a></li>
+							<li class="l"><a href="#">戒指</a></li>
+							<li class="l"><a href="#">指环</a></li>
+							<li class="l"><a href="#">宝石</a></li>
+							<li class="l"><a href="#">裸石</a></li>
+							<li class="l"><a href="#">胸针</a></li>
+							<li class="l"><a href="#">头饰</a></li>
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">蒂芙尼</a></li>
+							<li class="l"><a href="#">宝格丽</a></li>
+							<li class="l"><a href="#">施华洛</a></li>
+							<li class="l"><a href="#">爱马仕</a></li>
+							<li class="l"><a href="#">香奈儿</a></li>
+							<li class="l"><a href="#">易威登</a></li>
+							<li class="l"><a href="#">潘多拉</a></li>
+							<li class="l"><a href="#">世奇路</a></li>
+							<li class="l"><a href="#">莫尼卡</a></li>
+							<li class="l"><a href="#">维纳德</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">时尚水晶</a></li>
+							<li class="l"><a href="#">弹簧系列</a></li>
+							<li class="l"><a href="#">格丽项链</a></li>
+							<li class="l"><a href="#">珍珠吊坠</a></li>
+							<li class="l"><a href="#">明星同款</a></li>
+							<li class="l"><a href="#">戒指婚戒</a></li>
+							<li class="l"><a href="#">迪奥手镯</a></li>
+							<li class="l"><a href="#">足金首饰</a></li>
+						</ul>
+					</div>
+				</main>
+				
+				<main class="nav11">
+					<div class="baodai l">
+						<p>分类</p>
+						<ul>
+							<li class="l"><a href="#">男士腕表</a></li>
+							<li class="l"><a href="#">女士腕表</a></li>
+							<li class="l"><a href="#">机械腕表</a></li>
+							<li class="l"><a href="#">石英腕表</a></li>
+						</ul>
+					</div>
+					<div class="baodai l">
+						<p>品牌</p>
+						<ul>
+							<li class="l"><a href="#">宝珀</a></li>
+							<li class="l"><a href="#">宝玑</a></li>
+							<li class="l"><a href="#">朗格</a></li>
+							<li class="l"><a href="#">百达</a></li>
+							<li class="l"><a href="#">翡丽</a></li>
+							<li class="l"><a href="#">江诗</a></li>
+							<li class="l"><a href="#">丹顿</a></li>
+							<li class="l"><a href="#">积家</a></li>
+							<li class="l"><a href="#">芝柏</a></li>
+							<li class="l"><a href="#">萧邦</a></li>
+							<li class="l"><a href="#">万国</a></li>
+							<li class="l"><a href="#">沛纳</a></li>
+							<li class="l"><a href="#">海格</a></li>
+							<li class="l"><a href="#">拉苏</a></li>
+							<li class="l"><a href="#">蒂劳</a></li>
+							<li class="l"><a href="#">米茄</a></li>
+							<li class="l"><a href="#">宝珀</a></li>
+							<li class="l"><a href="#">宝玑</a></li>
+							<li class="l"><a href="#">朗格</a></li>
+							<li class="l"><a href="#">百达</a></li>
+							<li class="l"><a href="#">翡丽</a></li>
+						</ul>
+					</div>
+					<div class="baodai l th">
+						<p>热词</p>
+						<ul>
+							<li class="l"><a href="#">蓝气球</a></li>
+							<li class="l"><a href="#">水鬼星</a></li>
+							<li class="l"><a href="#">座碟飞</a></li>
+							<li class="l"><a href="#">五十噚</a></li>
+							<li class="l"><a href="#">名匠丽</a></li>
+							<li class="l"><a href="#">贝伦赛</a></li>
+							<li class="l"><a href="#">大师葡</a></li>
+							
+						</ul>
+					</div>
+				</main>
+			</nav>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/header.js" ></script>
+
+
+

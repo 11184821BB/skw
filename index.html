@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>寺库网首页</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<!-----------------------------header----------------------------->
+		<div id="header"></div>
+		<!-------------------------------main----------------------------->
+		<main>
+		
+			<!----------------------banner----------------------->
+			<div class="banner w">
+				<div id="sliderBox"></div>		
+			</div>
+			<!------------------------ad-------------------------->
+			<div class="ad w">
+				<dl class="l">
+					<dt><img src="image/case1.jpg" /></dt>
+					<dd>VERCASE</dd>
+				</dl>
+				<dl class="l">
+					<dt><img src="image/case2.jpg" /></dt>
+					<dd>CARAL*London</dd>
+				</dl>
+				<dl class="l">
+					<dt><img src="image/case3.jpg" /></dt>
+					<dd>Roger Vivier</dd>
+				</dl>
+				<dl class="l">
+					<dt><img src="image/case4.jpg" /></dt>
+					<dd>Mulberry/玛百莉</dd>
+				</dl>
+				<dl class="l">
+					<dt><img src="image/case5.jpg" /></dt>
+					<dd>Mastermind World</dd>
+				</dl>
+				<dl class="l">
+					<dt><img src="image/case6.jpg" /></dt>
+					<dd>TUMI</dd>
+				</dl>
+				<dl class="l">
+					<dt><img src="image/case7.jpg" /></dt>
+					<dd>TIMEX WATCH</dd>
+				</dl>
+				<dl class="l">
+					<dt><img src="image/case8.jpg" /></dt>
+					<dd>SECARTS HOME</dd>
+				</dl>
+			</div>
+			<!--------------------------like---------------------------->
+			<div class="title w">
+            	<span>猜您喜欢</span>
+            </div>
+			<div id="all" class="w">    
+				<div id="div1">        
+					<ul>            
+						<li><img src="image/pic1.jpg" /></li>            
+						<li><img src="image/pic2.jpg" /></li>            
+						<li><img src="image/pic3.jpg" /></li>            
+						<li><img src="image/pic4.jpg" /></li>
+						<li><img src="image/pic5.jpg" /></li>            
+						<li><img src="image/pic6.jpg" /></li>            
+						<li><img src="image/pic7.jpg" /></li>            
+						<li><img src="image/pic8.jpg" /></li>
+						<li><img src="image/pic9.jpg" /></li>            
+						<li><img src="image/pic10.jpg" /></li>            
+						<li><img src="image/pic11.jpg" /></li>            
+						<li><img src="image/pic12.jpg" /></li>
+						<li><img src="image/pic13.jpg" /></li>            
+						<li><img src="image/pic14.jpg" /></li>            
+						<li><img src="image/pic15.jpg" /></li>            
+						<li><img src="image/pic16.jpg" /></li>
+						<li><img src="image/pic17.jpg" /></li>            
+						<li><img src="image/pic18.jpg" /></li>            
+						<li><img src="image/pic19.jpg" /></li>            
+						<li><img src="image/pic20.jpg" /></li>
+					</ul>     
+				</div>     
+				<a href="javascript:void(0);"  id="left"><</a>     
+				<a href="javascript:void(0);"  id="right" >></a> 
+			</div>
+
+
+		</main>	
+		<!-----------------------------footer------------------------------->
+		<div id="footer"></div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="js/index.js" ></script>
+
+<script type="text/javascript">
+$(function(){
+	//轮播图
+	let s1 = new Slider($("#sliderBox"),1200,502,["image/img0.jpg","image/img1.jpg","image/img2.jpg","image/img3.jpg","image/img4.jpg","image/img5.jpg","image/img6.jpg"],
+				15,"#ccc","#f8a120",
+				true,-1,1500);
+				
+	//头部
+	$("#header").load("header.html");
+	//脚部
+	$("#footer").load("footer.html");
+
+	//	like轮播图
+	$(".movieUlOne").animate({
+		left: -1400
+	},1000);
+	$(".movieUlTwo").animate({
+		left: 0
+	},1000);
+	
+
+	//dl添加p标签
+	$("dl").append("<p></p>");
+	$("dl p").css({color:"red",position:"absolute",bottom:"68px",
+	width:"590px",height:"10px",background:"#f8a120",
+	opacity:"0.8",display:"none"
+	});
+	//ad区域hover事件
+	$("dl").hover(function(){
+		$(this).children("p").stop();
+		$(this).children("p").fadeIn(300);
+		$(this).children("dd").css({color:"#f8a120"});
+	},function(){
+		$(this).children("p").stop();
+		$(this).children("p").fadeOut(300);
+		$(this).children("dd").css({color:"#000"});
+	});
+});
+//第二个轮播图
+var odiv=document.getElementById("div1");		
+var oul=odiv.getElementsByTagName("ul")[0];		
+var oa=document.getElementsByTagName("a");		
+var speed=-5;		
+oul.innerHTML+=oul.innerHTML;
+var oli=oul.getElementsByTagName("li");		
+var timer=null;		
+oul.style.width=(oli[0].offsetWidth+8)*oli.length+'px';		
+timer=setInterval(function() {						
+	oul.style.left=oul.offsetLeft+speed+'px';				
+	if(oul.offsetLeft<-oul.offsetWidth/2){
+		oul.style.left=0;					
+	}
+	else if(oul.offsetLeft>0){					
+		oul.style.left=-(oul.offsetWidth/2)+'px';					
+		//alert(oul.offsetLeft);					
+		}				
+	},30);		
+	oa[0].onclick=function(){			
+		speed=-5;			
+	}		
+	oa[1].onclick=function(){			
+		speed=5;			
+	}		
+	oul.onmouseover=function(){			
+		clearInterval(timer);		
+	}		
+	oul.onmouseout=function(){			
+		timer=setInterval(function(){					
+			oul.style.left=oul.offsetLeft+speed+'px';			
+			if(oul.offsetLeft<-oul.offsetWidth/2){				
+				oul.style.left=0;				
+			}else if(oul.offsetLeft>0)			
+			{				
+				oul.style.left=-(oul.offsetWidth/2)+'px';				
+			}		
+		},30);
+	}
+</script>
