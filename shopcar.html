@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/shopcar.css"/>
+	</head>
+	<body>
+		<!---------------------------header----------------------------->
+		<header>
+			<div class="headerlogo w">
+				<h1><img src="image/carheadbg.png"/></h1>
+			</div>
+		</header>
+		<!----------------------------main-------------------------------->
+		<main>
+			<div id="centerBox" class="w">
+				<div class="padLeft">
+					现在<a href="#">登录</a>您购物车中的商品将被永久保存
+				</div>
+				
+				<div class="cartBox" style="display: block;">
+					<div class="cartSlist">
+						<table cellspacing="0" cellpadding="0" border="0" class="carTable">
+							<thead>
+								<tr>
+									<th width="75px">
+										<input name="choseAll" type="checkbox" id="choseAll" onclick="cartJS.choseAll(this)">
+										<label for="choseAll">全选</label>
+									</th>
+									<th width="355px" colspan="2">商品名称</th>
+									<th width="96px">发货站</th>
+									<th width="96px">价格 </th>
+									<th width="140px">数量</th>
+									<th width="110px">金额小计</th>
+									<th width="110px">操作</th>
+								</tr>
+							</thead>
+							<!--==========================================tbody-->
+							<tbody>
+							<!-- 商品明细列表循环遍历 -->
+								
+								<!-- 促销相关头部提示 -->
+									
+								<!-- 单品买赠时添加的特殊头部 -->
+			
+									<!-- 商品明细列表加载 -->
+									<tr name="cartRow">
+										<td><input class="checkBox" value="33753171_0" name="promotionId0" id="choseItem" type="checkbox" onclick="cartJS.choseItem(this)"></td>
+										<td width="97px" valign="top">
+											<div class="cartPic l padRight15">
+												<a><img src="image/shopcar1.jpg" alt="CARAT*/珂珞玫瑰金色925银CoraRoseStuds耳环23813-1" width="80px" height="80px"></a>
+											</div>
+										</td>
+			              				<td valign="top" style="line-height: 22px;">
+			                    			<div class="cartNames l">
+			                            		<p class="namePro"><a href="#">CARAT*/珂珞玫瑰金色925银CoraRoseStuds耳环23813-1</a></p>
+			                    			</div>
+			                    			<div class="cartNames l" style="overflow:visible">
+			                        			<p class="namePro color999 pad45">     
+			                        				颜色：玫瑰金色&nbsp;&nbsp;	
+			                        			</p>
+			                    			</div>
+			             				</td>
+			                         	<td valign="top">中国大陆</td>
+			                         	<td valign="top"><span class="rmb">¥</span>650</td>
+										<td valign="top">
+											<div class="countNum clearfix">
+			                         			<div class="cPlus l" >-</div>
+			                         			<div class="cInput l"><input class="Num" type="text" name="quantity" value="1"></div>
+			                         			<div class="cMinus l">+</div>
+			                         		</div>
+										</td>
+										<td valign="top">
+											<strong class="colore93"><span class="rmb colore93">¥</span>
+												650元
+											</strong>
+												
+											
+										</td>
+										<td valign="top"><a href="#" class="del" name="deleteRow">删除</a></td>
+									</tr>
+									<!-- 商品明细列表加载结束 -->
+								
+			                    
+											
+							
+							<!-- 商品明细列表循环遍历结束 -->
+							<!-- 非正常商品明细列表遍历 -->
+								
+							<!-- 非正常商品明细列表遍历 -->
+							</tbody>
+				
+				
+				
+						</table>
+					</div>
+				
+					<div class="cartPrice">
+						<div class="cartAno">
+							<div class="ano01 l">
+								<input name="choseAll" type="checkbox" id="choseAll">
+								<label for="choseAll">全选</label>
+							</div>
+							
+						</div>
+						<p>商品数量总计：0件</p>
+				        <p>包装数量总计：0件</p>
+						<p>返利库币：0库币</p>
+						<p class="totalPriceBottom">商品金额总计（不含税金和运费）：<span class="rmb"></span><strong>0.00</strong></p>
+						<p class="clearfix">
+							<a href="#" class="l a01 marTop12">继续购物</a>
+							<a href="#" class="r a02 a02dis">立即结算</a>
+						</p>
+					</div>	
+				
+					<!-- 删除选中商品弹出层 -->
+					<div class="cartPop">
+				    	<div class="close">×</div>
+				    	<div class="arrow"><p></p></div>
+				        <div class="popContent">
+				        	<h3 class="clearfix">删除商品</h3>
+				            
+				            <div class="popText">确定从购物车中删除所选中的0件商品？</div>
+				            <div class="cbtns">
+				            	<a class="btn01" href="###">确定</a>&nbsp;
+				                <a class="btn02" href="###">取消</a>
+				            </div>
+				        </div>
+				    </div>
+				
+					<!-- 删除按钮弹出层 -->
+					<div class="cartPop01">
+				    	<div class="popText">您确定要删除吗？</div>
+				            <div class="cbtns">
+				            	<a class="btn01" href="###">确定</a>&nbsp;
+				                <a class="btn02" href="###">取消</a>
+				            </div>
+				    </div>
+					
+					
+					
+				
+				</div>
+			</div>	
+		</main>
+	</body>
+</html>
+<script type="text/javascript" src="js/shopcar.js" ></script>

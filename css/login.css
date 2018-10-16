@@ -1,0 +1,144 @@
+/*====================================header=============================*/
+header{
+	height: 70px;
+	background: #323131;
+	padding:0px 36px;
+}
+header span{
+	display: inline-block;
+	width: 30px;
+	height: 70px;
+	background: url(../image/logo.png);
+}
+header ul{
+	margin-right: 5px;
+}
+header ul li a{
+	color: #999999;
+	margin-left: 24px;
+	line-height: 70px;
+}
+
+main .banner{
+	height: 860px;
+	background: url(../image/login_03.jpg) center;
+}
+main .banner .login{
+	width: 380px;
+	height: 513px;
+	background: #fff;
+	margin-top: 150px;
+	margin-right: 31px;
+	box-shadow: 0px 0px 2px 2px #ccc;
+}
+main .banner .login h3{
+	margin-top: 32px;
+	margin-left: 152px;
+}
+main .banner .login h3 a{
+	margin-right: 63px;
+	font-size: 18px;
+	color: #666;
+	font-weight: normal;
+}
+main .banner .login form{
+	margin-top: 50px;
+}
+main .banner .login form dl{ 
+	margin:0 35px; 
+	height:48px;
+	width: 309px;  
+	border:1px solid #ccc; 
+	position:relative;
+	margin-bottom: 15px;
+}
+main .banner .login form dl dd input{
+	width: 301px;
+	height: 48px;
+	border: 0;
+	margin-left: 9px;
+	/*background: none;*/
+}
+main .banner .login form dl dt{
+	position:absolute;
+	height:33px;
+	top:27px;
+	left:0;
+	color: #999;
+	line-height:33px;
+	margin-left: 20px;
+	margin-top: -19px;
+}
+main .banner .login form dl:nth-of-type(3){
+	border: 0;
+}
+main .banner .login form dl:nth-of-type(3) dd input{
+	width: 12px;
+	height: 12px;
+}
+main .banner .login form dl:nth-of-type(3) dt{
+	position:absolute;
+	top:10px;
+	left:8px;
+	color: #000;
+}
+main .banner .login form dl:last-child{
+	height:44px;
+	margin-top:15px;
+	background:#0cc440;
+	border:0;
+	border-radius:4px;
+}
+main .banner .login form dl:last-child input{
+	color:#fff;
+	text-align:center;
+	font-size:18px;
+	background: #f19108;
+	margin-left: 0px;
+	width: 309px;
+}
+main .banner .login .com{
+	margin-left: 35px;
+	margin-top: 45px;
+}
+main .banner .login .com p{
+	color: #999;
+}
+main .banner .login .com ul li a{
+	position: relative;
+	line-height: 38px;
+	padding-right: 56px;
+}
+main .banner .login .com ul li a:nth-of-type(1){
+	margin-left: 23px;
+}
+main .banner .login .com ul li:nth-of-type(1) a span{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: url(../image/qq.jpg);
+	position: absolute;
+	top: 0;
+	left: -20px;
+}
+main .banner .login .com ul li:last-of-type a span{
+	display: block;
+	width: 24px;
+	height: 19px;
+	background: url(../image/weixin.png);
+	background-size: 24px 19px;
+	position: absolute;
+	top: 0;
+	left: -28px;
+}
+main .banner .login .com p:last-child{
+	line-height: 60px;
+}
+main .banner .login .com p:last-child a:nth-of-type(1){
+	color: #f19108;
+}
+main .banner .login .com p:last-child a:last-child{
+	color: #666;
+	margin-left: 107px;
+	
+}

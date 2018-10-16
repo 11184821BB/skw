@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*=======================reset===============*/
+body, h1, h2, h3, h4, h5, h6, p, a, img, input, ul, ol, dl, dt, dd, li, figure, figcaption {
+  padding: 0;
+  margin: 0; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  display: block;
+  border: 0; }
+
+input, select {
+  outline: none; }
+
+header, footer, nav, section, figure, figcaption, main, article, aside {
+  display: block; }
+
+body {
+  font-size: 12px;
+  color: #999;
+  font-family: "微软雅黑";
+  background: #f5f5f5; }
+
+a {
+  text-decoration: none;
+  color: #999; }
+
+div {
+  box-sizing: border-box; }
+
+/*=======================公共样式======================*/
+.w {
+  width: 1200px;
+  margin: 0 auto; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+#shop {
+  background: #fff; }
+  #shop ul {
+    height: 48px;
+    line-height: 48px;
+    background: #fff;
+    padding: 0 35px; }
+    #shop ul li {
+      font-size: 18px; }
+    #shop ul li:nth-of-type(1) a {
+      padding-right: 30px;
+      border-right: 1px solid #e0dede; }
+    #shop ul li:nth-of-type(2) {
+      padding-left: 20px; }
+
+#allgoods {
+  padding-top: 20px;
+  overflow: hidden;
+  background: #fff; }
+  #allgoods #goods .products {
+    width: 296px;
+    height: 360px;
+    padding: 0 29px;
+    margin-top: 40px;
+    border: 1px solid #fff; }
+    #allgoods #goods .products dl {
+      width: 240px;
+      height: 311px; }
+      #allgoods #goods .products dl dt {
+        width: 240px;
+        height: 240px;
+        border-bottom: 1px solid #ccc; }
+      #allgoods #goods .products dl dd {
+        width: 240px;
+        height: 70px;
+        background: #fff;
+        overflow: hidden; }
+        #allgoods #goods .products dl dd p {
+          margin-top: 10px;
+          margin-left: 15px; }
+          #allgoods #goods .products dl dd p a {
+            color: #323232; }
+          #allgoods #goods .products dl dd p span {
+            color: #e93b39; }
+        #allgoods #goods .products dl dd p:nth-of-type(2) {
+          line-height: 10px;
+          margin-left: 15px; }
+    #allgoods #goods .products .shopcar {
+      width: 242px;
+      height: 32px;
+      padding-top: 5px;
+      background: #fff; }
+      #allgoods #goods .products .shopcar li:nth-of-type(1) {
+        background: #e93b39;
+        width: 70px;
+        height: 22px; }
+        #allgoods #goods .products .shopcar li:nth-of-type(1) a {
+          display: block;
+          width: 70px;
+          height: 22px;
+          line-height: 22px;
+          text-align: center;
+          color: #fff; }
+      #allgoods #goods .products .shopcar li:nth-of-type(2) {
+        width: 11px;
+        height: 11px;
+        margin-left: 115px;
+        margin-top: 10px; }
+        #allgoods #goods .products .shopcar li:nth-of-type(2) span {
+          width: 11px;
+          height: 11px;
+          display: block;
+          background: url(../image/repeat-d1.png) top no-repeat; }
+      #allgoods #goods .products .shopcar li:nth-of-type(3) {
+        margin-right: 17px;
+        margin-top: 5px; }
+        #allgoods #goods .products .shopcar li:nth-of-type(3) a {
+          color: #999; }
+
+/*# sourceMappingURL=shop.css.map */
