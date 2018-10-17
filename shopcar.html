@@ -16,7 +16,7 @@
 		<main>
 			<div id="centerBox" class="w">
 				<div class="padLeft">
-					现在<a href="#">登录</a>您购物车中的商品将被永久保存
+					现在<a href="login.html">登录</a>您购物车中的商品将被永久保存
 				</div>
 				
 				<div class="cartBox" style="display: block;">
@@ -25,7 +25,7 @@
 							<thead>
 								<tr>
 									<th width="75px">
-										<input name="choseAll" type="checkbox" id="choseAll" onclick="cartJS.choseAll(this)">
+										<input name="choseAll" type="checkbox" id="choseAll">
 										<label for="choseAll">全选</label>
 									</th>
 									<th width="355px" colspan="2">商品名称</th>
@@ -81,10 +81,6 @@
 										<td valign="top"><a href="#" class="del" name="deleteRow">删除</a></td>
 									</tr>
 									<!-- 商品明细列表加载结束 -->
-								
-			                    
-											
-							
 							<!-- 商品明细列表循环遍历结束 -->
 							<!-- 非正常商品明细列表遍历 -->
 								
@@ -99,8 +95,10 @@
 					<div class="cartPrice">
 						<div class="cartAno">
 							<div class="ano01 l">
-								<input name="choseAll" type="checkbox" id="choseAll">
-								<label for="choseAll">全选</label>
+								<input id="btnUnCheck" type="button"  value="反选" />
+							</div>
+							<div class="ano02 l delSp">
+								<a href="#">删除选中商品</a>
 							</div>
 							
 						</div>
@@ -137,13 +135,266 @@
 				                <a class="btn02" href="###">取消</a>
 				            </div>
 				    </div>
-					
-					
-					
-				
+
 				</div>
 			</div>	
+			
+			<div id="cartSmsg" class="w">
+				<h3 class="ch3">猜你喜欢</h3>
+				<div id="all" class="w">    
+					<div id="div1">        
+						<ul class="ul1">            
+							<li class="l li1">
+								<div class="pic"><img src="image/c1.jpg" /></div>
+								<div class="">CARAT*/珂珞白色925银Aelia</div>
+								<div class="ficeStar">
+									<ul class="star1" style="height: 28px;margin:2px 0 0px 7px;width: 140px;" class="l">
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+									</ul>
+								</div>
+							</li>            
+							
+							<li class="l li1">
+								<div class="pic"><img src="image/c2.jpg" /></div>
+								<div class="">CARAT*/珂珞白色925银Aelia</div>
+								<div class="ficeStar">
+									<ul class="star2" style="height: 28px;margin:2px 0 0px 7px;width: 140px;" class="l">
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+									</ul>
+								</div>
+							</li> 
+							<li class="l  li1">
+								<div class="pic"><img src="image/c3.jpg" /></div>
+								<div class="">CARAT*/珂珞白色925银Aelia</div>
+								<div class="ficeStar">
+									<ul class="star3" style="height: 28px;margin:2px 0 0px 7px;width: 140px" class="l">
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+									</ul>
+								</div>
+							</li>             
+							<li class="l li1">
+								<div class="pic"><img src="image/c4.jpg" /></div>
+								<div class="">CARAT*/珂珞白色925银Aelia</div>
+								<div class="ficeStar">
+									<ul class="star4" style="height: 28px;margin:2px 0 0px 7px;width: 140px" class="l">
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+									</ul>
+								</div>
+							</li> 
+							<li class="l li1">
+								<div class="pic"><img src="image/c5.jpg" /></div>
+								<div class="">CARAT*/珂珞白色925银Aelia</div>
+								<div class="ficeStar">
+									<ul class="star5" style="height: 28px;margin:2px 0 0px 7px;width: 140px" class="l">
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+										<li class="five l" style="width: 27px; height: 28px;margin: 0;"></li>
+									</ul>
+								</div>
+							</li> 
+						</ul>     
+					</div>     
+					<a href="javascript:void(0);"  id="left"><</a>     
+					<a href="javascript:void(0);"  id="right" >></a> 
+				</div>
+
+			</div>
+			
 		</main>
+		
+		<!---------------------------footer----------------------------->
+		<footer>
+			<div class="first">
+				<ul class="l">
+					<li class="l"><a href="#">新手指南</a></li>
+					<li class="l"><a href="#">寺库微博</a></li>
+					<li class="l"><a href="#">加入寺库</a></li>
+					<li class="l"><a href="#">寺库奢侈品养护</a></li>
+				</ul>
+				<ul class="l">
+					<li class="l"><a href="#">付款方式</a></li>
+					<li class="l"><a href="#">友情链接</a></li>
+					<li class="l"><a href="#">联系我们</a></li>
+					<li class="l"><a href="#">寺库招商</a></li>
+				</ul>
+				<ul class="l">
+					<li class="l"><a href="#">物流配送</a></li>
+					<li class="l"><a href="#">奢侈品热词</a></li>
+					<li class="l"><a href="#">关于寺库</a></li>
+					<li class="l"><a href="#">Investors</a></li>
+				</ul>
+				<ul class="l">
+					<li class="l"><a href="#">售后服务</a></li>
+					<li class="l"><a href="#">寺库国际站</a></li>
+					<li class="l"><a href="#">帮助中心 </a></li>
+				</ul>
+			</div>
+			<div class="second">
+				<ul class="l">
+					<li class="l"><a href="#"><span><img src="image/pcfooterbatb.png"/></span>京公安备11010102001392</a></li>
+					<li class="l">京ICP证110119号 京ICP备09084709号-3</li>
+					<li class="l"><a href="#">ISO9001中国质量管理体系认证</a></li>
+					<li class="l"><a href="#">出版物经营许可证</a></li>
+					<li class="l"><a href="#">食品经营许可证</a></li>
+				</ul>
+			</div>
+			<div class="three">
+				<ul class="l">
+					<li class="l">京B2-20181305</li>
+					<li class="l">京食药网食备201810026</li>
+					<li class="l">客服电话：400-875-6789</li>
+					<li class="l">COPYRIGHT © 2010-2018 北京寺库商贸有限公司 版权所有</li>
+				</ul>
+			</div>
+			<div class="four">
+				<ul class="l">
+					<li class="l"><a href="#"><img src="image/f_01.jpg"/></a></li>
+					<li class="l"><a href="#"><img src="image/cnnic.png"/></a></li>
+					<li class="l"><a href="#"><img src="image/kexin.jpg"/></a></li>
+					<li class="l"><a href="#"><img src="image/f_03.jpg"/></a></li>
+				</ul>
+			</div>	
+			
+		</footer>
 	</body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 <script type="text/javascript" src="js/shopcar.js" ></script>
+<script type="text/javascript">	
+//1、定义全选的插件
+jQuery.fn.extend({
+	bindCheck:function($subCheckBox,$btnUncheck){
+		let $allCheckBox = this;
+		//1、给全选复选框绑定click事件
+		//this:是全选复选框（jQuery对象）
+		this.click(function(){
+			let isChecked = this.checked;
+			$subCheckBox.each(function(){
+				this.checked = isChecked;
+			});
+		});
+		//2、给反选
+		if(arguments.length==2){
+			$btnUncheck.click(function(){
+				$subCheckBox.each(function(){
+					this.checked = !this.checked;
+				});
+				reversCheck();
+			});
+		}
+		//3、给每个选择项的复选框绑定事件
+		$subCheckBox.click(function(){
+			reversCheck();
+		});
+		function reversCheck(){
+			//1、判断是否全部的复选框被选中
+			let isAllChecked = true;
+			$subCheckBox.each(function(){
+				if(!this.checked){
+					isAllChecked = false;
+				}
+			});
+			//2、处理全选复选框
+			$allCheckBox.attr("checked",isAllChecked);
+		}
+	}
+});
+$(function(){
+	$("#choseAll").bindCheck($("#choseItem"),$("#btnUnCheck"));
+});
+/*
+//五星好评
+function changeColor(side){
+	let liDoms = $(".five");
+	//1）、当前li及其前面的li变黄
+	for(let j=0;j<=side;j++){
+		liDoms[j].style.backgroundPosition="0px -28px";
+	}
+	//2）、当前li后面的li变灰
+	for(let j=side+1;j<liDoms.length;j++){
+		liDoms[j].style.backgroundPosition="0px 0px";
+	}
+}
+	let score = 0 ;
+	let liDoms = $(".five");
+	for(let i=0;i<liDoms.length;i++){
+		//1、鼠标进入
+		liDoms[i].onmouseover = function(){
+			//成绩和i比较，谁大以谁为分界线
+			let max = score-1>=i?score-1:i;
+			changeColor(max);
+		}
+		//2、鼠标离开		
+		liDoms[i].onmouseout = function(){
+			changeColor(score-1);
+		}	
+		//3、鼠标点击		
+		liDoms[i].onclick = function(){
+			score = i+1;
+			$("#scorep").innerHTML = score;
+			changeColor(score-1);			
+		}		
+	}
+*/
+
+//第二个轮播图
+var odiv=document.getElementById("div1");		
+var oul=odiv.getElementsByTagName("ul")[0];		
+var oa=document.getElementsByTagName("a");		
+var speed=-5;		
+oul.innerHTML+=oul.innerHTML;
+var oli=oul.getElementsByTagName("li");		
+var timer=null;		
+oul.style.width=(oli[0].offsetWidth+8)*oli.length+'px';		
+timer=setInterval(function() {						
+	oul.style.left=oul.offsetLeft+speed+'px';				
+	if(oul.offsetLeft<-oul.offsetWidth/2){
+		oul.style.left=0;					
+	}
+	else if(oul.offsetLeft>0){					
+		oul.style.left=-(oul.offsetWidth/2)+'px';					
+		//alert(oul.offsetLeft);					
+		}				
+	},30);		
+	oa[0].onclick=function(){			
+		speed=-5;			
+	}		
+	oa[1].onclick=function(){			
+		speed=5;			
+	}		
+	oul.onmouseover=function(){			
+		clearInterval(timer);		
+	}		
+	oul.onmouseout=function(){			
+		timer=setInterval(function(){					
+			oul.style.left=oul.offsetLeft+speed+'px';			
+			if(oul.offsetLeft<-oul.offsetWidth/2){				
+				oul.style.left=0;				
+			}else if(oul.offsetLeft>0)			
+			{				
+				oul.style.left=-(oul.offsetWidth/2)+'px';				
+			}		
+		},30);
+	}
+
+
+
+</script>

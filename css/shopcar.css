@@ -34,7 +34,6 @@ main #centerBox{
 }
 main #centerBox .padLeft{
 	padding-left: 18px;
-	background: yellow;
 	color: #666;
 	line-height: 28px;
 	margin-top: 4px;
@@ -217,7 +216,7 @@ input[type=checkbox], input[type=radio] {
     width: 255px;
     height: 130px;
     position: absolute;
-    /*display: none;*/
+    display: none;
     z-index: 55;
 }
 .close {
@@ -275,11 +274,159 @@ input[type=checkbox], input[type=radio] {
     background-color: #999;
 }
 .cartPop01 {
-    /*display: none;*/
+    display: none;
     padding: 0 20px 18px 20px;
     background-color: #fff;
     border: 1px solid #9c9c9c;
     width: 110px;
     position: absolute;
     z-index: 22;
+}
+.ano02 {
+    padding-left: 20px;
+    background: url(../image/del.jpg) no-repeat 0px 0px;
+    cursor: pointer;
+    /*color: #c69c6d;*/
+    height: 16px;
+    line-height: 16px;
+    padding-top: 1px;
+}
+.delSp a {
+    color: #666;
+}
+#cartSmsg{
+	/*width: 986px;*/
+    border: 1px solid #f1f1f1;
+    /*background: #f0f;*/
+    padding: 1px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.ch3 {
+    height: 38px;
+    background-color: #ececec;
+    line-height: 38px;
+    text-indent: 24px;
+    font-weight: bold;
+    color: #666;
+}
+    
+
+#all {
+    /*background: #0ff;*/
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+
+
+footer{
+	height: 358px;
+	background: #f5f5f5;
+	/*margin-top: 67px;*/
+	padding-top: 48px;
+	padding-left: 31px;
+	font-size: 14px;
+}
+footer .first ul li{
+	padding-right: 179px;
+	line-height: 34px;
+}
+footer .first ul:nth-of-type(3) li:nth-of-type(2){
+	padding-right: 166px;
+}
+footer .first ul:nth-of-type(4) li:nth-of-type(2){
+	padding-right: 166px;
+}
+footer .second ul{
+	margin-top: 25px;
+}
+footer .second ul li{
+	line-height: 38px;
+	margin-right: 32px;
+	padding-left: 20px;
+}
+footer .second ul li:nth-of-type(1) a{
+	position: relative;
+}
+footer .second ul li:nth-of-type(1) a span img{
+	/*display: block;*/
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right:172px;
+	top: 0px;
+	/*background: url(image/pcfooterbatb.png);*/
+}
+footer .three ul li{
+	line-height: 32px;
+	padding-right: 39px;
+}
+footer .four ul li img{
+	width: 108px;
+	height: 40px;
+}
+footer .four ul li{
+	margin-right: 20px;
+	margin-top: 12px;
+}
+
+
+	
+#div1{				
+	left:0;		
+	display:block;		
+	overflow:hidden;		
+	width:990px;		
+	height:250px;		
+	margin:0 auto;		
+	}	
+#div1 .ul1{		
+		position:relative;	 				
+		left:0;		
+		padding:0px;		
+		margin-top:30px;
+		height:250px;
+		overflow: hidden;	
+		}  
+#div1 .ul1 li{	  
+		width:160px;	 
+	    height:250px;	  
+	    float:left;	  
+	    margin:0px 0px 4px 32px;	
+	    /*background: yellow;*/
+	    } 
+#left{	  
+		position:absolute;	 
+		top:41%;	  
+		left:10px; 
+		font-size: 30px;	
+		color: #f8a120; 	
+		}	
+#right{	  
+	position:absolute;	
+	right:10px; 	  
+	top:41%;
+	font-size: 30px;
+	color: #f8a120; 	
+	}
+.pic{
+	width: 160px;
+	height: 160px;
+}
+.five{
+	float:left;
+	width:27px;
+	height:28px;
+	background-image:url(../image/star.gif);
+	background-position:0px 0px;
+	margin: 0;
+}
+
+ol{
+	height: 28px;
+	margin:2px 0 0px 7px;
+	width: 140px
 }
